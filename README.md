@@ -1,13 +1,21 @@
-# Sample Hardhat Project
+# Mint NFT Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+A user can easily mint any NFT using this smart contract and its interface
 
-Try running some of the following tasks:
+start by install dependencies and packages.
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
+npm install
+```
+
+In case of any Error check package version.
+Add .env file for storing your SECRET_KEY(API_KEY and PRIVATE_KEY).
+> Do not forget to include .env to .gitignore.
+
+run following commands to deploy and interact with smart contract.
+
+Update tokenURI to your own token. Use Pinata or similar platform for uri tokens.
+```shell
 npx hardhat run scripts/deploy.js
+npx hardhat run scripts/mint-nft.js
 ```
